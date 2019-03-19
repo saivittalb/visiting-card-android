@@ -1,9 +1,8 @@
 # Visiting Card Android
 
-[![Build Status](https://travis-ci.org/JBossOutreach/visiting-card-android.svg?branch=master)](https://travis-ci.org/JBossOutreach/visiting-card-android)
+[![Build Status](https://travis-ci.com/saivittalb/visiting-card-android.svg?token=z721JA78NQMYhyzx6xMp&branch=master)](https://travis-ci.com/saivittalb/visiting-card-android)
 ![Android](https://img.shields.io/badge/GCI-Android-green.svg?longCache=true&style=flat-square)   ![In Progress](https://img.shields.io/badge/In--progress-true-green.svg?longCache=true&style=flat-square) <br />
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/06bd6acff9cd4506985192596642ef5f)](https://www.codacy.com/app/JBossOutreach/visiting-card-android?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=JBossOutreach/visiting-card-android&amp;utm_campaign=Badge_Grade)
-[![Gitter](https://img.shields.io/gitter/room/JBossOutreach/visiting-card.svg)](https://gitter.im/JBossOutreach/visiting-card)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/f0ad363aa73b47b28c22ceb2bc673f2f)](https://www.codacy.com?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=saivittalb/visiting-card-android&amp;utm_campaign=Badge_Grade)
 
 ## Quick Insight
 An Android application that helps to virtually exchange digital visiting cards while attending meetups and conferences.<br>
