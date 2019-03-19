@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="toggle_theme"
+        android:summary="Enable dark theme in the app"
+        android:title="Toggle theme" />
+    <PreferenceCategory android:title="Your visit card information">
+        <EditTextPreference
+            android:capitalize="words"
+            android:inputType="textCapWords"
+            android:key="card_name"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:title="Name" />
+        <EditTextPreference
+            android:inputType="date"
+            android:key="card_birth"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:title="Date of birth" />
+        <EditTextPreference
+            android:inputType="textWebEmailAddress"
+            android:key="card_email"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:title="Email address" />
+        <EditTextPreference
+            android:inputType="phone"
+            android:key="card_phone"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:title="Phone number" />
+        <EditTextPreference
+          android:inputType="textVisiblePassword|textNoSuggestions"
+          android:key="card_linkedin"
+          android:maxLines="1"
+          android:singleLine="true"
+          android:title="LinkedIn username" />
+        <EditTextPreference
+          android:inputType="textVisiblePassword|textNoSuggestions"
+          android:key="card_twitter"
+          android:maxLines="1"
+          android:singleLine="true"
+          android:title="Twitter username" />
+        <EditTextPreference
+          android:inputType="textVisiblePassword|textNoSuggestions"
+          android:key="card_github"
+          android:maxLines="1"
+          android:singleLine="true"
+          android:title="GitHub username" />
+    </PreferenceCategory>
+</PreferenceScreen>

@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.c1om/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".visitingcard.VisitingCardActivity"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:weightSum="100">
+
+    <!--
+      TODO: Add profileImage - ImageView ; {Name, Email, PhoneNumber, Github, LinkedIn & Twitter Fields} - EditText
+    -->
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="90"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:elevation="30dp"
+        app:cardCornerRadius="20dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@drawable/card_bg"
+                android:weightSum="100">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_marginRight="60dp"
+                    android:layout_weight="25">
+
+                    <ImageButton
+                        android:id="@+id/profile_img"
+                        android:onClick="select_img"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/man"/>
+                    <TextView
+                      android:id="@+id/name_text"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginTop="10dp"
+                      android:fontFamily="sans-serif-smallcaps"
+                      android:text="Name Here"
+                      android:textAlignment="center"
+                      android:textColor="#fff"
+                      android:textSize="18sp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="left"
+                    android:layout_marginLeft="40dp"
+                    android:layout_weight="20"
+                    android:layout_marginTop="15dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/call"
+                            android:padding="5dp"/>
+                        <TextView
+                          android:id="@+id/phone_text"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_marginLeft="10dp"
+                          android:padding="5dp"
+                          android:fontFamily="sans-serif-smallcaps"
+                          android:text="xxx-xxxx-xxx"
+                          android:textAlignment="center"
+                          android:textColor="#000"
+                          android:textSize="15sp"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:padding="5dp"
+                            android:src="@drawable/mail"/>
+                        <TextView
+                          android:id="@+id/email_text"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_marginLeft="10dp"
+                          android:padding="5dp"
+                          android:fontFamily="sans-serif-smallcaps"
+                          android:text="email@domain.com"
+                          android:textAlignment="center"
+                          android:textColor="#000"
+                          android:textSize="15sp"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="left"
+                android:layout_marginLeft="40dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/linkedin"
+                        android:padding="5dp"/>
+                    <TextView
+                      android:id="@+id/linkedin_text"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginLeft="10dp"
+                      android:padding="5dp"
+                      android:fontFamily="sans-serif-smallcaps"
+                      android:text="www.linkedin.com/xxxxx"
+                      android:textAlignment="center"
+                      android:textColor="#fff"
+                      android:textSize="15sp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:padding="5dp"
+                        android:src="@drawable/twitter"/>
+                    <TextView
+                      android:id="@+id/twitter_text"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginLeft="10dp"
+                      android:padding="5dp"
+                      android:fontFamily="sans-serif-smallcaps"
+                      android:text="www.twitter.com/xxxxx"
+                      android:textAlignment="center"
+                      android:textColor="#fff"
+                      android:textSize="15sp"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:padding="5dp"
+                        android:src="@drawable/git"/>
+                    <TextView
+                      android:id="@+id/github_text"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginLeft="10dp"
+                      android:padding="5dp"
+                      android:fontFamily="sans-serif-smallcaps"
+                      android:text="www.github.com/xxxxx"
+                      android:textAlignment="center"
+                      android:textColor="#fff"
+                      android:textSize="15sp"/>
+
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_below="@+id/card"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:soundEffectsEnabled="true"
+        android:src="@drawable/ic_arrow_forward_black_24dp"
+        app:elevation="17dp"
+        app:fabSize="normal"
+        app:layout_anchor="@+id/include"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:rippleColor="@color/colorAccent" />
+
+</LinearLayout>
